@@ -1693,11 +1693,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\AgendaDeCompromissos\\AgendaDeCompromissos\\AgendaDeCompromissos.csproj",
+      "projectUniqueName": "C:\\Projects\\Agenda\\AgendaDeCompromissos\\AgendaDeCompromissos.csproj",
       "projectName": "AgendaDeCompromissos",
-      "projectPath": "C:\\Projects\\AgendaDeCompromissos\\AgendaDeCompromissos\\AgendaDeCompromissos.csproj",
+      "projectPath": "C:\\Projects\\Agenda\\AgendaDeCompromissos\\AgendaDeCompromissos.csproj",
       "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\AgendaDeCompromissos\\AgendaDeCompromissos\\obj\\",
+      "outputPath": "C:\\Projects\\Agenda\\AgendaDeCompromissos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
