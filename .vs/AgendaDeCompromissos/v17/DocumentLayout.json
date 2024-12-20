@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Projects\\Agenda\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2995EC8B-A5A5-48E5-8C59-923E7135CB3F}|AgendaDeCompromissos\\AgendaDeCompromissos.csproj|c:\\projects\\agenda\\agendadecompromissos\\apresentacao\\agenda.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2995EC8B-A5A5-48E5-8C59-923E7135CB3F}|AgendaDeCompromissos\\AgendaDeCompromissos.csproj|solutionrelative:agendadecompromissos\\apresentacao\\agenda.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2995EC8B-A5A5-48E5-8C59-923E7135CB3F}|AgendaDeCompromissos\\AgendaDeCompromissos.csproj|c:\\projects\\agenda\\agendadecompromissos\\apresentacao\\agenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2995EC8B-A5A5-48E5-8C59-923E7135CB3F}|AgendaDeCompromissos\\AgendaDeCompromissos.csproj|solutionrelative:agendadecompromissos\\apresentacao\\agenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
@@ -39,6 +43,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Agenda.Designer.cs",
+              "DocumentMoniker": "C:\\Projects\\Agenda\\AgendaDeCompromissos\\Apresentacao\\Agenda.Designer.cs",
+              "RelativeDocumentMoniker": "AgendaDeCompromissos\\Apresentacao\\Agenda.Designer.cs",
+              "ToolTip": "C:\\Projects\\Agenda\\AgendaDeCompromissos\\Apresentacao\\Agenda.Designer.cs",
+              "RelativeToolTip": "AgendaDeCompromissos\\Apresentacao\\Agenda.Designer.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAADwv2QAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T23:57:11.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Agenda.cs [Projeto]",
               "DocumentMoniker": "C:\\Projects\\Agenda\\AgendaDeCompromissos\\Apresentacao\\Agenda.cs",
               "RelativeDocumentMoniker": "AgendaDeCompromissos\\Apresentacao\\Agenda.cs",

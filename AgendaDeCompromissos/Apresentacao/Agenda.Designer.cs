@@ -95,9 +95,10 @@ namespace AgendaDeCompromissos.Apresentacao
             dtpDataHora.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dtpDataHora.CustomFormat = "dd/MM/yyyy      HH:mm";
             dtpDataHora.Format = DateTimePickerFormat.Custom;
+            dtpDataHora.ImeMode = ImeMode.NoControl;
             dtpDataHora.Location = new Point(34, 97);
             dtpDataHora.Margin = new Padding(10);
-            dtpDataHora.MinDate = new DateTime(2024, 12, 10, 0, 0, 0, 0);
+            dtpDataHora.MinDate = DateTime.Now;
             dtpDataHora.Name = "dtpDataHora";
             dtpDataHora.Size = new Size(160, 23);
             dtpDataHora.TabIndex = 1;
@@ -187,6 +188,7 @@ namespace AgendaDeCompromissos.Apresentacao
             btnExcluir.Name = "btnExcluir";
             btnExcluir.Size = new Size(64, 39);
             btnExcluir.TabIndex = 6;
+            btnExcluir.TabStop = false;
             btnExcluir.Text = "Excluir";
             btnExcluir.UseVisualStyleBackColor = true;
             btnExcluir.Click += btnExcluir_Click;
