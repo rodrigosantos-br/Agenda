@@ -1,6 +1,4 @@
-﻿using System.Windows.Forms;
-
-namespace AgendaDeCompromissos.Apresentacao
+﻿namespace AgendaDeCompromissos.Apresentacao
 {
     partial class fmrAgenda
     {
@@ -31,13 +29,6 @@ namespace AgendaDeCompromissos.Apresentacao
         private void InitializeComponent()
         {
             dgvCompromissos = new DataGridView();
-            gpbAdicionarOuEditarCompromisso = new GroupBox();
-            dtpDataHora = new DateTimePicker();
-            txbTitulo = new TextBox();
-            lblTitulo = new Label();
-            lblDataHora = new Label();
-            txbDescricao = new TextBox();
-            lblDescricao = new Label();
             btnLimpar = new Button();
             btnAgendar = new Button();
             btnExcluir = new Button();
@@ -45,12 +36,19 @@ namespace AgendaDeCompromissos.Apresentacao
             tlpAgenda = new TableLayoutPanel();
             flpAgendarEditarLimpar = new FlowLayoutPanel();
             btnEditar = new Button();
+            gpbAdicionarOuEditarCompromisso = new GroupBox();
+            mtbDataHora = new MaskedTextBox();
+            txbTitulo = new TextBox();
+            lblTitulo = new Label();
+            lblDataHora = new Label();
+            txbDescricao = new TextBox();
+            lblDescricao = new Label();
             flpExcluir = new FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)dgvCompromissos).BeginInit();
-            gpbAdicionarOuEditarCompromisso.SuspendLayout();
             gpbCompromissos.SuspendLayout();
             tlpAgenda.SuspendLayout();
             flpAgendarEditarLimpar.SuspendLayout();
+            gpbAdicionarOuEditarCompromisso.SuspendLayout();
             flpExcluir.SuspendLayout();
             SuspendLayout();
             // 
@@ -72,91 +70,6 @@ namespace AgendaDeCompromissos.Apresentacao
             dgvCompromissos.Size = new Size(736, 499);
             dgvCompromissos.TabIndex = 7;
             dgvCompromissos.TabStop = false;
-            // 
-            // gpbAdicionarOuEditarCompromisso
-            // 
-            gpbAdicionarOuEditarCompromisso.AutoSize = true;
-            gpbAdicionarOuEditarCompromisso.Controls.Add(dtpDataHora);
-            gpbAdicionarOuEditarCompromisso.Controls.Add(txbTitulo);
-            gpbAdicionarOuEditarCompromisso.Controls.Add(lblTitulo);
-            gpbAdicionarOuEditarCompromisso.Controls.Add(lblDataHora);
-            gpbAdicionarOuEditarCompromisso.Controls.Add(txbDescricao);
-            gpbAdicionarOuEditarCompromisso.Controls.Add(lblDescricao);
-            gpbAdicionarOuEditarCompromisso.Dock = DockStyle.Fill;
-            gpbAdicionarOuEditarCompromisso.Location = new Point(3, 3);
-            gpbAdicionarOuEditarCompromisso.Name = "gpbAdicionarOuEditarCompromisso";
-            gpbAdicionarOuEditarCompromisso.Size = new Size(314, 521);
-            gpbAdicionarOuEditarCompromisso.TabIndex = 10;
-            gpbAdicionarOuEditarCompromisso.TabStop = false;
-            gpbAdicionarOuEditarCompromisso.Text = "Adicionar ou Editar Compromisso";
-            // 
-            // dtpDataHora
-            // 
-            dtpDataHora.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dtpDataHora.CustomFormat = "dd/MM/yyyy      HH:mm";
-            dtpDataHora.Format = DateTimePickerFormat.Custom;
-            dtpDataHora.ImeMode = ImeMode.NoControl;
-            dtpDataHora.Location = new Point(34, 97);
-            dtpDataHora.Margin = new Padding(10);
-            dtpDataHora.MinDate = new DateTime(2024, 12, 20, 0, 4, 24, 382);
-            dtpDataHora.Name = "dtpDataHora";
-            dtpDataHora.Size = new Size(160, 23);
-            dtpDataHora.TabIndex = 1;
-            dtpDataHora.Value = new DateTime(2024, 12, 20, 0, 4, 24, 382);
-            // 
-            // txbTitulo
-            // 
-            txbTitulo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            txbTitulo.BackColor = Color.Lavender;
-            txbTitulo.Location = new Point(34, 37);
-            txbTitulo.Margin = new Padding(10);
-            txbTitulo.Name = "txbTitulo";
-            txbTitulo.Size = new Size(160, 23);
-            txbTitulo.TabIndex = 0;
-            // 
-            // lblTitulo
-            // 
-            lblTitulo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            lblTitulo.AutoSize = true;
-            lblTitulo.Location = new Point(34, 19);
-            lblTitulo.Margin = new Padding(50);
-            lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(38, 15);
-            lblTitulo.TabIndex = 0;
-            lblTitulo.Text = "Título";
-            // 
-            // lblDataHora
-            // 
-            lblDataHora.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            lblDataHora.AutoSize = true;
-            lblDataHora.Location = new Point(34, 79);
-            lblDataHora.Margin = new Padding(10);
-            lblDataHora.Name = "lblDataHora";
-            lblDataHora.Size = new Size(69, 15);
-            lblDataHora.TabIndex = 1;
-            lblDataHora.Text = "Data e Hora";
-            // 
-            // txbDescricao
-            // 
-            txbDescricao.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            txbDescricao.BackColor = Color.Lavender;
-            txbDescricao.Location = new Point(34, 157);
-            txbDescricao.Margin = new Padding(10);
-            txbDescricao.Multiline = true;
-            txbDescricao.Name = "txbDescricao";
-            txbDescricao.Size = new Size(238, 313);
-            txbDescricao.TabIndex = 2;
-            // 
-            // lblDescricao
-            // 
-            lblDescricao.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            lblDescricao.AutoSize = true;
-            lblDescricao.Location = new Point(34, 139);
-            lblDescricao.Margin = new Padding(10);
-            lblDescricao.Name = "lblDescricao";
-            lblDescricao.Size = new Size(58, 15);
-            lblDescricao.TabIndex = 2;
-            lblDescricao.Text = "Descrição";
             // 
             // btnLimpar
             // 
@@ -188,7 +101,7 @@ namespace AgendaDeCompromissos.Apresentacao
             btnExcluir.Margin = new Padding(10);
             btnExcluir.Name = "btnExcluir";
             btnExcluir.Size = new Size(64, 39);
-            btnExcluir.TabIndex = 6;
+            btnExcluir.TabIndex = 50;
             btnExcluir.TabStop = false;
             btnExcluir.Text = "Excluir";
             btnExcluir.UseVisualStyleBackColor = true;
@@ -246,6 +159,87 @@ namespace AgendaDeCompromissos.Apresentacao
             btnEditar.UseVisualStyleBackColor = true;
             btnEditar.Click += btnEditar_Click;
             // 
+            // gpbAdicionarOuEditarCompromisso
+            // 
+            gpbAdicionarOuEditarCompromisso.AutoSize = true;
+            gpbAdicionarOuEditarCompromisso.Controls.Add(mtbDataHora);
+            gpbAdicionarOuEditarCompromisso.Controls.Add(txbTitulo);
+            gpbAdicionarOuEditarCompromisso.Controls.Add(lblTitulo);
+            gpbAdicionarOuEditarCompromisso.Controls.Add(lblDataHora);
+            gpbAdicionarOuEditarCompromisso.Controls.Add(txbDescricao);
+            gpbAdicionarOuEditarCompromisso.Controls.Add(lblDescricao);
+            gpbAdicionarOuEditarCompromisso.Dock = DockStyle.Fill;
+            gpbAdicionarOuEditarCompromisso.Location = new Point(3, 3);
+            gpbAdicionarOuEditarCompromisso.Name = "gpbAdicionarOuEditarCompromisso";
+            gpbAdicionarOuEditarCompromisso.Size = new Size(314, 521);
+            gpbAdicionarOuEditarCompromisso.TabIndex = 10;
+            gpbAdicionarOuEditarCompromisso.TabStop = false;
+            gpbAdicionarOuEditarCompromisso.Text = "Adicionar ou Editar Compromisso";
+            // 
+            // mtbDataHora
+            // 
+            mtbDataHora.BackColor = Color.Lavender;
+            mtbDataHora.Location = new Point(34, 97);
+            mtbDataHora.Mask = "00/00/0000 90:00";
+            mtbDataHora.Name = "mtbDataHora";
+            mtbDataHora.Size = new Size(160, 23);
+            mtbDataHora.TabIndex = 1;
+            mtbDataHora.ValidatingType = typeof(DateTime);
+            // 
+            // txbTitulo
+            // 
+            txbTitulo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txbTitulo.BackColor = Color.Lavender;
+            txbTitulo.Location = new Point(34, 37);
+            txbTitulo.Margin = new Padding(10);
+            txbTitulo.Name = "txbTitulo";
+            txbTitulo.Size = new Size(160, 23);
+            txbTitulo.TabIndex = 0;
+            // 
+            // lblTitulo
+            // 
+            lblTitulo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lblTitulo.AutoSize = true;
+            lblTitulo.Location = new Point(34, 19);
+            lblTitulo.Margin = new Padding(50);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new Size(38, 15);
+            lblTitulo.TabIndex = 0;
+            lblTitulo.Text = "Título";
+            // 
+            // lblDataHora
+            // 
+            lblDataHora.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lblDataHora.AutoSize = true;
+            lblDataHora.Location = new Point(34, 79);
+            lblDataHora.Margin = new Padding(10);
+            lblDataHora.Name = "lblDataHora";
+            lblDataHora.Size = new Size(69, 15);
+            lblDataHora.TabIndex = 1;
+            lblDataHora.Text = "Data e Hora";
+            // 
+            // txbDescricao
+            // 
+            txbDescricao.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txbDescricao.BackColor = Color.Lavender;
+            txbDescricao.Location = new Point(34, 157);
+            txbDescricao.Margin = new Padding(10);
+            txbDescricao.Multiline = true;
+            txbDescricao.Name = "txbDescricao";
+            txbDescricao.Size = new Size(238, 313);
+            txbDescricao.TabIndex = 2;
+            // 
+            // lblDescricao
+            // 
+            lblDescricao.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lblDescricao.AutoSize = true;
+            lblDescricao.Location = new Point(34, 139);
+            lblDescricao.Margin = new Padding(10);
+            lblDescricao.Name = "lblDescricao";
+            lblDescricao.Size = new Size(58, 15);
+            lblDescricao.TabIndex = 2;
+            lblDescricao.Text = "Descrição";
+            // 
             // flpExcluir
             // 
             flpExcluir.Controls.Add(btnExcluir);
@@ -265,12 +259,12 @@ namespace AgendaDeCompromissos.Apresentacao
             Text = "Agenda";
             Load += Agenda_Load;
             ((System.ComponentModel.ISupportInitialize)dgvCompromissos).EndInit();
-            gpbAdicionarOuEditarCompromisso.ResumeLayout(false);
-            gpbAdicionarOuEditarCompromisso.PerformLayout();
             gpbCompromissos.ResumeLayout(false);
             tlpAgenda.ResumeLayout(false);
             tlpAgenda.PerformLayout();
             flpAgendarEditarLimpar.ResumeLayout(false);
+            gpbAdicionarOuEditarCompromisso.ResumeLayout(false);
+            gpbAdicionarOuEditarCompromisso.PerformLayout();
             flpExcluir.ResumeLayout(false);
             flpExcluir.PerformLayout();
             ResumeLayout(false);
@@ -278,14 +272,7 @@ namespace AgendaDeCompromissos.Apresentacao
 
         #endregion
         private DataGridView dgvCompromissos;
-        private GroupBox gpbAdicionarOuEditarCompromisso;
-        private DateTimePicker dtpDataHora;
-        private TextBox txbTitulo;
-        private Label lblTitulo;
         private Button btnAgendar;
-        private Label lblDataHora;
-        private TextBox txbDescricao;
-        private Label lblDescricao;
         private Button btnExcluir;
         private GroupBox gpbCompromissos;
         private Button btnLimpar;
@@ -293,5 +280,12 @@ namespace AgendaDeCompromissos.Apresentacao
         private FlowLayoutPanel flpAgendarEditarLimpar;
         private Button btnEditar;
         private FlowLayoutPanel flpExcluir;
+        private GroupBox gpbAdicionarOuEditarCompromisso;
+        private TextBox txbTitulo;
+        private Label lblTitulo;
+        private Label lblDataHora;
+        private TextBox txbDescricao;
+        private Label lblDescricao;
+        private MaskedTextBox mtbDataHora;
     }
 }

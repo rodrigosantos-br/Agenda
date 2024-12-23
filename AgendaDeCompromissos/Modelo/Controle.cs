@@ -94,6 +94,10 @@ namespace AgendaDeCompromissos.Modelo
                 {
                     textBox.Clear(); // Limpa o texto
                 }
+                if (ctrl is MaskedTextBox maskedTextBox)
+                {
+                    maskedTextBox.Clear(); // Limpa o texto
+                }
                 else if (ctrl is DateTimePicker dateTimePicker)
                 {
                     dateTimePicker.Value = DateTime.Now; // Restaura para a data/hora atual

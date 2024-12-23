@@ -1,5 +1,4 @@
 using AgendaDeCompromissos.Modelo;
-using System.Windows.Forms;
 
 namespace AgendaDeCompromissos.Apresentacao
 {
@@ -40,13 +39,22 @@ namespace AgendaDeCompromissos.Apresentacao
 
         private void btnAgendar_Click(object sender, EventArgs e)
         {
-            // Adiciona o novo compromisso
-            controle.AdicionarCompromisso(txbTitulo.Text, dtpDataHora.Value, txbDescricao.Text);
+            // Tenta converter o texto do MaskedTextBox para DateTime
+            if (DateTime.TryParse(mtbDataHora.Text, out DateTime dataHora))
+            {
+                // Adiciona o novo compromisso
+                controle.AdicionarCompromisso(txbTitulo.Text, dataHora, txbDescricao.Text);
 
-            // Limpa e recarrega os compromissos
-            CarregarCompromissos();
+                // Limpa e recarrega os compromissos
+                CarregarCompromissos();
 
-            controle.LimparCampos(gpbAdicionarOuEditarCompromisso);
+                controle.LimparCampos(gpbAdicionarOuEditarCompromisso);
+            }
+            else
+            {
+                MessageBox.Show("Data e hora inválidas. Por favor, insira um valor válido.",
+                    "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -54,10 +62,31 @@ namespace AgendaDeCompromissos.Apresentacao
             if (dgvCompromissos.CurrentRow != null)
             {
                 int id = Convert.ToInt32(dgvCompromissos.CurrentRow.Cells["Id"].Value);
-                string titulo = txbTitulo.Text;
-                DateTime dataHora = dtpDataHora.Value;
-                string descricao = txbDescricao.Text;
+                string titulo = txbTitulo.Text.Trim();
+                string descricao = txbDescricao.Text.Trim();
+                string dataHoraTexto = mtbDataHora.Text.Trim();
+                DateTime dataHora;
 
+                // Validações
+                if (string.IsNullOrWhiteSpace(titulo))
+                {
+                    MessageBox.Show("O título não pode estar vazio.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (string.IsNullOrWhiteSpace(descricao))
+                {
+                    MessageBox.Show("A descrição não pode estar vazia.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (!DateTime.TryParse(dataHoraTexto, out dataHora))
+                {
+                    MessageBox.Show("A data e hora informadas são inválidas.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Criação do compromisso atualizado
                 Compromisso compromisso = new Compromisso
                 {
                     Id = id,
@@ -70,7 +99,13 @@ namespace AgendaDeCompromissos.Apresentacao
                 controle.LimparCampos(gpbAdicionarOuEditarCompromisso);
                 CarregarCompromissos();
             }
+            else
+            {
+                MessageBox.Show("Selecione um compromisso para editar.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
+
 
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -94,15 +129,23 @@ namespace AgendaDeCompromissos.Apresentacao
                 }
             }
         }
+
         private void dgvCompromissos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Verifica se a linha clicada é válida
-            if (e.RowIndex >= 0 && dgvCompromissos.Rows[e.RowIndex].DataBoundItem is Compromisso compromisso)
+            if (e.RowIndex >= 0)
             {
-                // Preenche os campos com os dados do compromisso selecionado
-                txbTitulo.Text = compromisso.Titulo;
-                dtpDataHora.Value = compromisso.DataHora;
-                txbDescricao.Text = compromisso.Descricao;
+                var compromisso = dgvCompromissos.Rows[e.RowIndex].DataBoundItem as Compromisso;
+
+                if (compromisso != null)
+                {
+                    txbTitulo.Text = compromisso.Titulo;
+                    mtbDataHora.Text = compromisso.DataHora.ToString("dd/MM/yyyy HH:mm");
+                    txbDescricao.Text = compromisso.Descricao;
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao carregar o compromisso selecionado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
