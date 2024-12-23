@@ -67,22 +67,8 @@ namespace AgendaDeCompromissos.Apresentacao
                 string dataHoraTexto = mtbDataHora.Text.Trim();
                 DateTime dataHora;
 
-                // Validações
-                if (string.IsNullOrWhiteSpace(titulo))
-                {
-                    MessageBox.Show("O título não pode estar vazio.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                if (string.IsNullOrWhiteSpace(descricao))
-                {
-                    MessageBox.Show("A descrição não pode estar vazia.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
                 if (!DateTime.TryParse(dataHoraTexto, out dataHora))
                 {
-                    MessageBox.Show("A data e hora informadas são inválidas.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -104,9 +90,6 @@ namespace AgendaDeCompromissos.Apresentacao
                 MessageBox.Show("Selecione um compromisso para editar.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-
-
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {

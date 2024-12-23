@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{2995EC8B-A5A5-48E5-8C59-923E7135CB3F}|AgendaDeCompromissos\\AgendaDeCompromissos.csproj|solutionrelative:agendadecompromissos\\apresentacao\\agenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2995EC8B-A5A5-48E5-8C59-923E7135CB3F}|AgendaDeCompromissos\\AgendaDeCompromissos.csproj|c:\\projects\\agenda\\agendadecompromissos\\modelo\\validacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2995EC8B-A5A5-48E5-8C59-923E7135CB3F}|AgendaDeCompromissos\\AgendaDeCompromissos.csproj|solutionrelative:agendadecompromissos\\modelo\\validacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2995EC8B-A5A5-48E5-8C59-923E7135CB3F}|AgendaDeCompromissos\\AgendaDeCompromissos.csproj|c:\\projects\\agenda\\agendadecompromissos\\modelo\\compromisso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2995EC8B-A5A5-48E5-8C59-923E7135CB3F}|AgendaDeCompromissos\\AgendaDeCompromissos.csproj|solutionrelative:agendadecompromissos\\modelo\\compromisso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2995EC8B-A5A5-48E5-8C59-923E7135CB3F}|AgendaDeCompromissos\\AgendaDeCompromissos.csproj|c:\\projects\\agenda\\agendadecompromissos\\modelo\\controle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2995EC8B-A5A5-48E5-8C59-923E7135CB3F}|AgendaDeCompromissos\\AgendaDeCompromissos.csproj|solutionrelative:agendadecompromissos\\modelo\\controle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2995EC8B-A5A5-48E5-8C59-923E7135CB3F}|AgendaDeCompromissos\\AgendaDeCompromissos.csproj|c:\\projects\\agenda\\agendadecompromissos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2995EC8B-A5A5-48E5-8C59-923E7135CB3F}|AgendaDeCompromissos\\AgendaDeCompromissos.csproj|solutionrelative:agendadecompromissos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2995EC8B-A5A5-48E5-8C59-923E7135CB3F}|AgendaDeCompromissos\\AgendaDeCompromissos.csproj|c:\\projects\\agenda\\agendadecompromissos\\modelo\\validacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2995EC8B-A5A5-48E5-8C59-923E7135CB3F}|AgendaDeCompromissos\\AgendaDeCompromissos.csproj|solutionrelative:agendadecompromissos\\modelo\\validacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2995EC8B-A5A5-48E5-8C59-923E7135CB3F}|AgendaDeCompromissos\\AgendaDeCompromissos.csproj|c:\\projects\\agenda\\agendadecompromissos\\modelo\\compromisso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2995EC8B-A5A5-48E5-8C59-923E7135CB3F}|AgendaDeCompromissos\\AgendaDeCompromissos.csproj|solutionrelative:agendadecompromissos\\modelo\\compromisso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2995EC8B-A5A5-48E5-8C59-923E7135CB3F}|AgendaDeCompromissos\\AgendaDeCompromissos.csproj|c:\\projects\\agenda\\agendadecompromissos\\dal\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Projects\\Agenda\\AgendaDeCompromissos\\Program.cs",
               "RelativeDocumentMoniker": "AgendaDeCompromissos\\Program.cs",
@@ -82,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Validacao.cs",
               "DocumentMoniker": "C:\\Projects\\Agenda\\AgendaDeCompromissos\\Modelo\\Validacao.cs",
               "RelativeDocumentMoniker": "AgendaDeCompromissos\\Modelo\\Validacao.cs",
@@ -90,11 +90,12 @@
               "RelativeToolTip": "AgendaDeCompromissos\\Modelo\\Validacao.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T00:16:08.711Z"
+              "WhenOpened": "2024-12-22T00:16:08.711Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Compromisso.cs",
               "DocumentMoniker": "C:\\Projects\\Agenda\\AgendaDeCompromissos\\Modelo\\Compromisso.cs",
               "RelativeDocumentMoniker": "AgendaDeCompromissos\\Modelo\\Compromisso.cs",
@@ -102,7 +103,8 @@
               "RelativeToolTip": "AgendaDeCompromissos\\Modelo\\Compromisso.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T00:16:05.553Z"
+              "WhenOpened": "2024-12-22T00:16:05.553Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -126,8 +128,7 @@
               "RelativeToolTip": "AgendaDeCompromissos\\Apresentacao\\Agenda.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T00:15:54.456Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T00:15:54.456Z"
             },
             {
               "$type": "Document",
@@ -137,20 +138,20 @@
               "RelativeDocumentMoniker": "AgendaDeCompromissos\\Apresentacao\\Agenda.cs",
               "ToolTip": "C:\\Projects\\Agenda\\AgendaDeCompromissos\\Apresentacao\\Agenda.cs",
               "RelativeToolTip": "AgendaDeCompromissos\\Apresentacao\\Agenda.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAgwDIAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-22T00:15:23.314Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Controle.cs",
               "DocumentMoniker": "C:\\Projects\\Agenda\\AgendaDeCompromissos\\Modelo\\Controle.cs",
               "RelativeDocumentMoniker": "AgendaDeCompromissos\\Modelo\\Controle.cs",
               "ToolTip": "C:\\Projects\\Agenda\\AgendaDeCompromissos\\Modelo\\Controle.cs",
               "RelativeToolTip": "AgendaDeCompromissos\\Modelo\\Controle.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAUwGIAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAywD8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-22T00:08:23.062Z",
               "EditorCaption": ""
@@ -169,15 +170,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Agenda.cs [Projeto]",
               "DocumentMoniker": "C:\\Projects\\Agenda\\AgendaDeCompromissos\\Apresentacao\\Agenda.cs",
               "RelativeDocumentMoniker": "AgendaDeCompromissos\\Apresentacao\\Agenda.cs",
               "ToolTip": "C:\\Projects\\Agenda\\AgendaDeCompromissos\\Apresentacao\\Agenda.cs [Projeto]",
               "RelativeToolTip": "AgendaDeCompromissos\\Apresentacao\\Agenda.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T22:37:28.37Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2024-12-19T22:37:28.37Z"
             }
           ]
         }
